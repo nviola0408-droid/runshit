@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome
+ | Edgar Linda Denosta</title>
+    <style>
+        /* 🌙 Dark Elegant Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a0f14, #2a0f1d, #3b0f26);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 💻 Login Box */
+        .container {
+            background: rgba(40, 20, 35, 0.9);
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
+            width: 350px;
+            padding: 40px 30px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 🩶 Title */
+        h1 {
+            margin-bottom: 30px;
+            color: #ff7fbf;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* 💖 Next Button */
+        button {
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(135deg, #ff4fa1, #ff85c1);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #ff85c1, #ffb6c1);
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+        }
+
+        /* ⚜️ Footer (Owner Info) */
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.9rem;
+            color: rgba(255, 182, 193, 0.8);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, pretty maldita </h1>
+        <button onclick="goNext()">Next</button>
+    </div>
+
+    <footer>11- Socrates Edgar Linda Denosta</footer>
+
+    <script>
+        function goNext() {
+            window.location.href = "second.html"; // redirect target page
+        }
+    </script>
+</body>
+</html>
