@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Playlist | Edgar Linda Denosta</title>
+    <style>
+        /* 🌙 Dark Elegant Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a0f14, #2a0f1d, #3b0f26);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 🎧 Music Container */
+        .container {
+            background: rgba(40, 20, 35, 0.9);
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
+            width: 400px;
+            padding: 40px 30px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #ff7fbf;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* 🎵 Song Bars */
+        .song-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffc0cb;
+            font-size: 0.95rem;
+            transition: 0.3s ease;
+        }
+
+        .song-bar:hover {
+            background: rgba(255, 105, 180, 0.15);
+            transform: scale(1.02);
+        }
+
+        .song-bar span {
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+            height: 25px;
+            filter: hue-rotate(310deg) brightness(1.1);
+        }
+
+        /* 💖 Next Button */
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(135deg, #ff4fa1, #ff85c1);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #ff85c1, #ffb6c1);
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+        }
+
+        /* ⚜️ Footer */
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.9rem;
+            color: rgba(255, 182, 193, 0.8);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Songs that Longs for u 🎶</h1>
+
+        <!-- 🎵 Song 1 -->
+        <div class="song-bar">
+            <span>💗 Parokya Ni Edgar - Para Sa'yo</span>
+            <audio controls>
+                <!-- Replace the src link below with your own audio file -->
+                <source src="Parokya Ni Edgar - Para Sa'yo (Official Music Video).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- 🎵 Song 2 -->
+        <div class="song-bar">
+            <span>💞 NIKI - La La Lost You</span>
+            <audio controls>
+                <!-- Replace the src link below with your own audio file -->
+                <source src="NIKI - La La Lost You (Official Video).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- 🎵 Song 3 -->
+        <div class="song-bar">
+            <span>💖 Co-Pilot - Just Hush (featuring J.O.L.O. & Rjay Ty)</span>
+            <audio controls>
+                <!-- Replace the src link below with your own audio file -->
+                <source src="Co-Pilot - Just Hush  (featuring J.O.L.O. & Rjay Ty) [Official Lyric Video].mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <button onclick="goNext()">Next ➤</button>
+    </div>
+
+    <footer>11 - Socrates Edgar Linda Denosta</footer>
+
+    <script>
+        function goNext() {
+            window.location.href = "third.html"; // Change to your desired next page
+        }
+    </script>
+</body>
+</html>
